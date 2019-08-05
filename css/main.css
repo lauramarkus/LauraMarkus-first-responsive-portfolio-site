@@ -129,6 +129,11 @@ textarea {
         text-decoration: none;
     }
 
+    img{
+        width: 100%;
+        height: auto;
+    }
+
     .content-wrapper{
         width:90%;
         margin: 0;
@@ -142,14 +147,13 @@ textarea {
     img{
         width:100%;
         height: auto;
-        margin:0;
         }
 
     .responsive{
         width: 100%;
         height: auto;
     }
-    
+           
 
 /*****HEADER AND FOOTER GENERAL STYLES*****/
 header{
@@ -209,8 +213,8 @@ header .content-wrapper{
 footer{
     background-color: #283844;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
     }
 
 /****MOBILE STYLES****/
@@ -218,7 +222,7 @@ footer{
 /***INTRODUCTION***/
 
 .introduction p{
-    width: 50%;
+    width: 80%;
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
 }
@@ -227,18 +231,15 @@ footer{
 
 .highlight{
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     background:#283844;
 }
 
-.content{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-flow:row wrap;
-}
-
 .content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
     width: 100%;
 }
 
@@ -247,6 +248,7 @@ h2{
     letter-spacing: 2px;
     padding-top: 10px;
     padding-bottom: 0;
+    text-align: center;
 }
 
 p{
@@ -255,24 +257,14 @@ p{
     padding-right: 25px;
     padding-bottom: 20px;
     text-align:center;
+    padding-bottom: 35px;
 }
 
 /*****EXPERIENCE*****/
-.experience{
-    background:cadetblue;
-    width: 100%;
-}
 
-.content-wrapper-two{
-    width: 90%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content:center;
-    padding-left:20px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-    padding-top: 30px;
+.experience{
+    background:#29442e;
+    width: 100%;
 }
 
 .experience h2{
@@ -281,37 +273,43 @@ p{
     letter-spacing: 2px;
     margin: 0; 
     padding-top: 30px;
-    padding-bottom:25px;
-    text-align: center; 
-    
+    padding-bottom:30px;
+    text-align: center;
+    border-bottom: 1px solid #15311a;    
 }
 
-.experience-divider{
-    width: 80%;
-    height: 1px;
-    margin: 10px 0 20px 0;
+
+.experience-items{
+   background: #29442e;
 }
 
-article{
+.experience article{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    background:#334c4d;
-    width: 80%;
+    background:#29442e;
+    width: 100%;
 }
+
 .experience p{
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
     margin-bottom: 20px;
     text-align: center;
+    width: 60%;
+}
+    
+.experience-description {
+    border-bottom: 1px solid #15311a;
+    padding-bottom: 40px;
 }
 
 .experience i{
     margin-bottom: 0;
     font-size: 2em;
-    }
-
+}
+   
 .interests-icons i{
     letter-spacing: 0.65em;
 }
@@ -339,6 +337,8 @@ article{
     font-family: 'Raleway', sans-serif;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 h4{
@@ -359,14 +359,17 @@ footer .social-icon {
     justify-content: center;
     align-items: center;
     background-color: #d8862e;
-    border-radius: 50%;
-    width: 40px;
+    border-radius: 100%;
+    width: 20px;
     height: 40px;
   }
 
   footer .social-icon p i {
-    font-size: 1.4em;
+    font-size: 2.0em;
+    padding-top: 35px;
+    margin: 0;
   }
+
 
   
 /* ==========================================================================
@@ -468,6 +471,36 @@ footer .social-icon {
         overflow-x: hidden; 
     }
 
+    .content-wrapper{
+        width: 100%;
+        }
+
+    
+    .introduction p{
+        font-size: 1.55em;
+        width: 75%;
+        line-height: 40px;
+    }
+
+    .highlight{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    .highlight-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap
+    }
+
+    article{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
 }
 
 @media only screen and (min-width:1200px){
@@ -477,12 +510,17 @@ footer .social-icon {
         max-width: 960px;
         }
 
-    .responsive {
-        width: 100%;
+    .content{
         max-width: 600px;
-        height: auto;
-        }
+    }
     
+    .responsive{
+        max-width: 600px;
+        width:100%;
+        height: auto;
+    } 
+
+        
     header h1{
         font-size: 3em;
         letter-spacing: 0.3em;
@@ -492,27 +530,78 @@ footer .social-icon {
         font-size: 1.3em;
         line-height: 2em;
     }
+
+    .introduction p{
+        font-size: 1.5em;
+        line-height: 1.65em;
+        width: 80%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     
     .highlight{
         flex-flow: row nowrap;
     }
-    
-      
-    h2{
-        font-size: 1.9em;
-        text-align: center;
+
+    .content-wrapper{
+        width: 100%;
         margin: 0;
-    }
-    
-    p{
-        font-size: 1.25em;
-        text-align: center;
-        margin: 0;
-    }
-    #highlight-two{
         display: flex;
-        flex-flow: row-reverse;
-        background-color:#2d3e4b
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
     }
+
+    h2{
+        font-size: 1.95em;
+        text-align: center;
+        margin: 0;
+        }
+
+      
+    p{
+        font-size: 1.5em;
+        line-height: 1.8em;
+        text-align: center;
+        margin: 0;
+        width: 60%;
+    }
+
+    #highlight-two{
+        background-color:#2d3e4b;
+        flex-flow: row-reverse;
+    }
+
+    .experience{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .content-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 960px;        
+    }    
+
+    .experience p{
+        font-size: 1.3em;
+        padding-top: 20px;
+        }
+
+   .experience article{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: column wrap;
+       margin: 0;
+       max-width: 55%
+    }
+
+   .experience-description{
+    font-size: 1.2em;
+   }
+     
 }
     
