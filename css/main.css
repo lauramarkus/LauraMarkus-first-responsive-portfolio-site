@@ -583,24 +583,10 @@ footer .social-icon {
 @media only screen and (min-width:1200px){
     /***** DESKTOP STYLES *****/
 
-    .content-wrapper{
-        max-width: 960px;
-        }
-
-    .content{
-        max-width: 600px;
-    }
-    
-    .responsive{
-        max-width: 600px;
-        width:100%;
-        height: auto;
-    } 
-
-        
+             
     header h1{
-        font-size: 3em;
-        letter-spacing: 0.3em;
+        font-size: 3.2em;
+        letter-spacing: 0.35em;
     
     }
     .introduction{
@@ -612,37 +598,29 @@ footer .social-icon {
         font-size: 1.5em;
         line-height: 1.65em;
         width: 80%;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     
     .highlight{
-        flex-flow: row nowrap;
-    }
-
-    .content-wrapper{
-        width: 100%;
-        margin: 0;
         display: flex;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        }
+    
+    .highlight-item{
+        display: flex;
         justify-content: center;
-        flex-flow: column;
+        align-items: center;
+        flex-direction: row;
+        
     }
-
+    
     h2{
         font-size: 1.95em;
         text-align: center;
         margin: 0;
         }
-
-      
-    p{
-        font-size: 1.5em;
-        line-height: 1.8em;
-        text-align: center;
-        margin: 0;
-        width: 60%;
-    }
 
     #highlight-two{
         background-color:#2d3e4b;
@@ -659,7 +637,7 @@ footer .social-icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 960px;        
+                
     }    
 
     .experience p{
@@ -681,4 +659,5 @@ footer .social-icon {
    }
      
 }
+    
     
