@@ -495,12 +495,88 @@ footer .social-icon {
         align-items: center;
         flex-flow: column nowrap
     }
+    .highlight article p{
+        font-size: 1.45em;
+        line-height: 1.65em;
+        }
 
     article{
         padding-top: 40px;
         padding-bottom: 40px;
+        width: 75%;
     }
 
+    /*****EXPERIENCE*****/
+
+.experience h2{
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin: 0; 
+    padding-top: 30px;
+    padding-bottom:30px;
+    text-align: center;
+    border-bottom: none;   
+}
+.experience-items{
+    background: #29442e;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 40px;
+ }
+
+ .experience article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    background:#29442e;
+    width: 50%;
+}
+
+.experience p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 70%;
+}
+    
+.experience-description {
+    border-bottom: none;
+    padding-bottom: 20px;
+}
+
+.experience i{
+    margin: 0;
+    font-size: 2em;
+}
+   
+.interests-icons i{
+    letter-spacing: 0.6em;
+    }
+
+#experience-1{
+    background-color: #19391f;
+}
+#experience-2{
+    background-color: #2f5035;
+}
+#experience-3{
+    background-color: #3e5f44;
+}
+#experience-4{
+    background-color: #1e4625;
+}
+#experience-5{
+    background-color: #1b341e;
+}
+#experience-6{
+    background-color: #374d3a;
+}
 
 }
 
