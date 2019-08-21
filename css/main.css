@@ -503,7 +503,15 @@ footer .social-icon {
         width: 100%;
         }
 
-    
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+        
     .introduction p{
         font-size: 1.55em;
         width: 75%;
