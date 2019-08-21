@@ -629,6 +629,11 @@ footer .social-icon {
         line-height: 2em;
     }
 
+    header nav ul li{
+        font-size: 1.3em;
+        font-weight: lighter;
+    }
+
     .introduction p{
         font-size: 1.5em;
         line-height: 1.65em;
