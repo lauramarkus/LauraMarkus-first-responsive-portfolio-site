@@ -134,6 +134,10 @@ textarea {
         height: auto;
     }
 
+    ul, ol{
+        list-style-type: none;
+    }
+
     .content-wrapper{
         width:90%;
         margin: 0;
@@ -197,10 +201,33 @@ header .content-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-direction: column;
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60%;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+header nav ul li{
+    font-size: 1em;
+    }
 
 .introduction{
     background: #d8862e;
@@ -535,6 +562,7 @@ footer .social-icon {
     flex-flow: row wrap;
     background:#29442e;
     width: 50%;
+    height: 300px;
 }
 
 .experience p{
@@ -587,8 +615,7 @@ footer .social-icon {
     header h1{
         font-size: 3.2em;
         letter-spacing: 0.35em;
-    
-    }
+        }
     .introduction{
         font-size: 1.3em;
         line-height: 2em;
@@ -637,19 +664,45 @@ footer .social-icon {
         display: flex;
         justify-content: center;
         align-items: center;
-                
+        padding-bottom: 60px;
+    }
+    
+    .experience h2{
+        font-size: 2em;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        letter-spacing: 3px;
     }    
+ 
+    .experience p{
+         font-size: 1.3em;
+         padding-top: 10px;
+         padding-bottom: 10px;
+    }
+ 
+    .experience article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        margin: 0;
+        max-width: 60%
+    }
+ 
+    .experience-description{
+     font-size: 1.2em;
+    }
 
     .experience p{
         font-size: 1.3em;
         padding-top: 20px;
-        }
+    }
 
    .experience article{
        display: flex;
        justify-content: center;
        align-items: center;
-       flex-flow: column wrap;
+       flex-flow: row wrap;
        margin: 0;
        max-width: 55%
     }
