@@ -148,11 +148,6 @@ textarea {
        margin:0;
     }
 
-    img{
-        width:100%;
-        height: auto;
-        }
-
     .responsive{
         width: 100%;
         height: auto;
@@ -177,7 +172,7 @@ header .hero-area{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    width: 100%
+    width: 100%;
 }
 
 header h1{
@@ -223,6 +218,7 @@ header nav ul{
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
+    list-style-type: none;
 }
 
 header nav ul li{
@@ -263,6 +259,7 @@ footer{
 }
 
 .content-wrapper{
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -618,8 +615,7 @@ footer .social-icon {
 
 @media only screen and (min-width:1200px){
     /***** DESKTOP STYLES *****/
-
-             
+       
     header h1{
         font-size: 3.2em;
         letter-spacing: 0.35em;
@@ -649,6 +645,8 @@ footer .social-icon {
         }
     
     .highlight-item{
+        padding-left: 5 px;
+        padding-right: 5 px;
         display: flex;
         justify-content: center;
         align-items: center;
